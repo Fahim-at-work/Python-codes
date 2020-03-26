@@ -2,7 +2,7 @@ def TakeInput():
     try:
         total_bill = float(input("Enter the total bill amount: "))
         number_of_people = int(input("Enter the number of people you want to split the bill: "))
-    except ValueError as err:
+    except Exception as err:
         print(err)
     return total_bill, number_of_people
 
